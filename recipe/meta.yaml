@@ -1,43 +1,43 @@
-{% set name = 'xdem' %}
-{% set version = '0.0.3' %}
+{% set name = "xdem" %}
+{% set version = "0.0.4" %}
 
 package:
-  name: '{{ name | lower }}'
-  version: '{{ version }}'
+  name: {{ name | lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/GlacioHack/xdem/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 06aa480c8ac749248ef5b2fc93c95ebabea344d4930251a27a44565f90b5f4c8 
+  sha256: 5e853c54b796eed9ccd4f91811d5d7c5f19930c8a7339c3af0330f364202d4b8
 
 build:
   number: 0
   noarch: python
-  script: '{{ PYTHON }} -m pip install . -vv'
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-  - python >=3.7
-  - pip
+    - python >=3.7
+    - pip
 
   run:
-  - python >=3.7
-  - proj >=7.2
-  - geopandas
-  - numba
-  - matplotlib-base
-  - opencv
-  - pyproj
-  - rasterio
-  - scipy
-  - tqdm
-  - scikit-image
-  - scikit-gstat
-  - pytransform3d
-  - geoutils
+    - python >=3.7
+    - proj >=7.2
+    - geopandas
+    - numba
+    - matplotlib-base
+    - opencv
+    - pyproj
+    - rasterio
+    - scipy
+    - tqdm
+    - scikit-image
+    - scikit-gstat
+    - pytransform3d
+    - geoutils
 
 test:
   imports:
-  - xdem
+    - xdem
 
 about:
   home: https://github.com/GlacioHack/xdem
@@ -49,6 +49,6 @@ about:
 
 extra:
   recipe-maintainers:
-  - erikmannerfelt
-  - adehecq
-  - rhugonnet
+    - erikmannerfelt
+    - adehecq
+    - rhugonnet
