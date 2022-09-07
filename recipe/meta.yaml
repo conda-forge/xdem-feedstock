@@ -16,13 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
 
   run:
     - python >=3.7
     - proj >=7.2
+    - numpy
     - geopandas
+    - fiona
+    - shapely
     - numba
     - matplotlib-base
     - opencv
@@ -34,6 +37,7 @@ requirements:
     - scikit-gstat >=0.6.7
     - pytransform3d
     - geoutils
+    - autovizwidget
 
 test:
   imports:
