@@ -1,5 +1,5 @@
 {% set name = "xdem" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name | lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/GlacioHack/xdem/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b13435c56c823bd435a61d393bc47ddc5e7141c944d770c2b5d5f14cf1a1c528
+  sha256: 8cbe63574a1d47d9079efbb6c6a58516722742f0d060c4fd05a7668a79f18f7b
 
 build:
   number: 0
@@ -16,13 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
 
   run:
     - python >=3.7
     - proj >=7.2
+    - numpy
     - geopandas
+    - fiona
+    - shapely
     - numba
     - matplotlib-base
     - opencv
