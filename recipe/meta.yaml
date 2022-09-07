@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/GlacioHack/xdem/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e85ecc68535b247e8cc88205cc02e4be0e0f2e055008a729cdaee23b1fa097c8
+  sha256: 8cbe63574a1d47d9079efbb6c6a58516722742f0d060c4fd05a7668a79f18f7b
 
 build:
   number: 0
