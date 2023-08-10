@@ -38,7 +38,6 @@ requirements:
     - scikit-gstat >=0.6.8
     - pytransform3d
     - geoutils ==0.0.11
-    - noisyopt
 
 test:
   imports:
