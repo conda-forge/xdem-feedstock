@@ -1,5 +1,5 @@
 {% set name = "xdem" %}
-{% set version = "0.0.11" %}
+{% set version = "0.0.12pre" %}
 
 package:
   name: {{ name | lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/GlacioHack/xdem/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 632a693784d901344c3f6e88760a045fdb7f264d045925ae5907e0885b9bcea6
+  sha256: 9bfdae04a074d05d77df9a5891f6b3c41d3852c0e69bcf1be512ac7c6717fea3
 
 build:
   number: 0
@@ -35,9 +35,11 @@ requirements:
     - scipy
     - tqdm
     - scikit-image
-    - scikit-gstat >=0.6.8
     - pytransform3d
     - geoutils ==0.0.11
+
+    - pip:
+        - scikit-gstat>=1.0.11
 
 test:
   imports:
