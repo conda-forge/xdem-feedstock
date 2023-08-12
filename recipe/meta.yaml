@@ -1,6 +1,8 @@
 {% set name = "xdem" %}
 {% set version = "0.0.12pre" %}
 
+{% set github_url = "https://github.com/GlacioHack/xdem" %}
+
 package:
   name: {{ name | lower }}
   version: {{ version }}
@@ -21,6 +23,7 @@ requirements:
 
   run:
     - python >=3.8
+    - pip
     - proj >=7.2
     - geopandas >=0.10.0
     - fiona
