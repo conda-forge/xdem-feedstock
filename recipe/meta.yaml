@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://github.com/GlacioHack/xdem/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 9bfdae04a074d05d77df9a5891f6b3c41d3852c0e69bcf1be512ac7c6717fea3
+  sha256: 11c66f526e1146710da74df6c3826bad9267a67fa071de2120d4d1d403bf9b0a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
