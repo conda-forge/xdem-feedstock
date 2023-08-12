@@ -27,7 +27,7 @@ requirements:
     - shapely
     - numba
     - numpy
-    - matplotlib
+    - matplotlib-base
     - opencv
     - openh264
     - pyproj >=3.4
