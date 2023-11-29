@@ -1,5 +1,3 @@
-conda_forge_output_validation: true
-
 github:
   # name of the github organization
   user_or_org: GlacioHack
