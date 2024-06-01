@@ -19,27 +19,25 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.9,<3.12
     - pip
     - setuptools
     - setuptools_scm
     - wheel
   run:
-    - python >=3.9
+    - python >=3.9,<3.12
     - pip
-    - geopandas >=0.10.0
-    - fiona
-    - shapely
-    - numba
-    - numpy
-    - matplotlib-base
-    - pyproj >=3.4
-    - rasterio >=1.3
-    - scipy
+    - geopandas >=0.12.0
+    - numba =0.*
+    - numpy =1.*
+    - matplotlib-base =3.*
+    - pyproj >=3.4,<4
+    - rasterio >=1.3,<2
+    - scipy >=1.0,<1.13
     - tqdm
-    - scikit-image
-    - scikit-gstat >=1.0
-    - geoutils ==0.0.15
+    - scikit-image =0.*
+    - scikit-gstat >=1.0,<1.1
+    - geoutils ==0.1.5
 
 test:
   imports:
