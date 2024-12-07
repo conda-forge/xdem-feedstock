@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xdem-feedstock/
 
 Home: https://github.com/GlacioHack/xdem
 
-Package license: MIT
+Package license: Apache-2.0
 
 Summary: Analysis of digital elevation models (DEMs)
 
