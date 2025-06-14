@@ -1,5 +1,5 @@
 {% set name = "xdem" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name | lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/GlacioHack/xdem/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 9627d518b26e2466829bb010f894913f3622fa3f5cd0ff25eb6cd1b67c9546cb
+  sha256: b0500dce988c77521be74dc0bcc53d98f2b4509dda63273b7cc18de6e1b8d280
 
 build:
   number: 0
