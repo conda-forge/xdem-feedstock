@@ -7,7 +7,7 @@ Home: https://github.com/GlacioHack/xdem
 
 Package license: Apache-2.0
 
-Summary: Analysis of digital elevation models (DEMs)
+Summary: Analysis of digital elevation models and elevation point clouds
 
 Development: https://github.com/GlacioHack/xdem
 
