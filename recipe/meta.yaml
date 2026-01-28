@@ -1,7 +1,7 @@
 {% set pypi_url = "https://pypi.io/packages/source/" %}
 {% set python_min = "3.10" %}
 {% set name = "xdem" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 {% set github_url = "https://github.com/GlacioHack/xdem" %}
 
@@ -11,7 +11,7 @@ package:
 
 source:
   url: {{ github_url }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 4970fcac32a3d0988565ae18698fc9c69d8368040326de34281ef47fe14c4563
+  sha256: f16cb305a63846085dc363b653da89f52963aeded69132afd7008aa6f0137a0a
 
 build:
   number: 0
@@ -34,7 +34,7 @@ requirements:
     - python >={{ python_min }},<3.15
 
     # Required dependency
-    - geoutils ==0.2.4
+    - geoutils ==0.2.5
 
     # First-order dependencies of the above
     - geopandas >=0.12.0
