@@ -1,7 +1,7 @@
 {% set pypi_url = "https://pypi.io/packages/source/" %}
 {% set python_min = "3.10" %}
 {% set name = "xdem" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 {% set github_url = "https://github.com/GlacioHack/xdem" %}
 
@@ -11,7 +11,7 @@ package:
 
 source:
   url: {{ github_url }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: f16cb305a63846085dc363b653da89f52963aeded69132afd7008aa6f0137a0a
+  sha256: c81b63eb0d944b316298725a83c63beb14c455f1b6a3911999090f0f1dd769e9
 
 build:
   number: 0
